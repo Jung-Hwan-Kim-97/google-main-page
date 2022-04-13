@@ -1,0 +1,223 @@
+/* COMMON  */
+body {
+  background-color: #202125;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER NAV  */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+/* HEADER LEFTNAV  */
+header .container .leftnav,
+header .container .leftnav .content {
+  display: flex;
+}
+
+header .container .leftnav .content a {
+  padding: 5px;
+  margin: 15px 10px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #bdc1c6;
+  text-decoration: none;
+}
+
+header .container .leftnav .content a:hover,
+header .container .rightnav .content a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER RIGHTNAV  */
+header .container .rightnav,
+header .container .rightnav .content {
+  display: flex;
+}
+
+header .container .rightnav .content div,
+header .container .rightnav .content img {
+  padding: 5px;
+  margin: 15px 10px 10px;
+
+}
+
+header .container .rightnav a {
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .container .rightnav a:first-child {
+  margin-right: 15px;
+}
+
+
+header .container .rightnav .content .img1 {
+  filter: opacity(.5) drop-shadow(0 0 0 white);
+
+}
+
+header .container .rightnav .content .img2 {
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+header .container .rightnav .content img:hover {
+  background-color: #353638;
+}
+
+/* MAIN  */
+main {
+  display: flex;
+  flex-direction: column;
+  /* background-color: orange; */
+}
+
+/*GOOGLE MAIN */
+main .google-logo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  height: 148px;
+  width: 100%;
+  position: relative;
+}
+
+main .google-logo img {
+  width: 272px;
+  height: 92px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* MAIN SERCHBAR  */
+main .serch {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  /* background-color: blue; */
+}
+
+main .serch [type="text"] {
+  border: 1px solid #5d5f63;
+  border-radius: 30px;
+  background-color: #202125;
+  outline: none;
+  width: 582px;
+  height: 44px;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+main .serch [type="text"]:hover {
+  background-color: #303135;
+  border: 1px solid #202125;
+}
+
+main .serch .serch-img1 {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 230px;
+  top: 10px;
+}
+
+main .serch .serch-img2,
+main .serch .serch-img3 {
+  width: 24px;
+  height: 24px;
+}
+
+/* MAIN SUB  */
+main .sub {
+
+  margin: 0 auto;
+  min-height: 340px;
+
+}
+
+main .sub .btn-group {
+  margin: 20px;
+}
+
+main .sub .btn-group .btn {
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  background-color: #303135;
+  outline: none;
+  border: 1px solid #303135;
+  border-radius: 5px;
+
+}
+
+main .sub .btn-group .btn:hover {
+  border: 1px solid #585a5d;
+}
+
+main .sub .btn-group .btn .btn__a {
+  color: #e7e8eb;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: left;
+}
+
+main .sub .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+main .sub .description a {
+  color: #8AB4F8;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+main .sub .description a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER  */
+footer a {
+  margin-right: 20px;
+  color: #9aa0a6;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-step1 {
+  max-height: 52px;
+  background-color: #171717;
+  border-bottom: 1px solid #212327;
+  color: #9aa0a6;
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+
+footer .footer-step2 .left-text {
+  margin-left: 20px;
+}
+
+footer .footer-step2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #171717;
+}
+
+footer .footer-step2 .left-text,
+footer .footer-step2 .right-text {
+  display: flex;
+  padding: 15px;
+  box-sizing: border-box;
+}
