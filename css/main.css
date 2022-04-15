@@ -99,7 +99,7 @@ main .form {
   right: 0;
   top: 0;
   z-index: 3;
-  
+  display: none;
 }
 
 /* FORM-TOP  */
