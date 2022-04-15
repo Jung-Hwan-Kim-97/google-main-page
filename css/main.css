@@ -1,0 +1,383 @@
+/* COMMON  */
+body {
+  background-color: #202125;
+  font-family: Arial, sans-serif;
+}
+
+/* HEADER NAV  */
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+/* HEADER LEFTNAV  */
+header .container .leftnav,
+header .container .leftnav .content {
+  display: flex;
+}
+
+header .container .leftnav .content a {
+  padding: 5px;
+  margin: 15px 10px 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #bdc1c6;
+  text-decoration: none;
+}
+
+header .container .leftnav .content a:hover,
+header .container .rightnav .content a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER RIGHTNAV  */
+header .container .rightnav,
+header .container .rightnav .content {
+  display: flex;
+}
+
+header .container .rightnav .content div,
+header .container .rightnav .content img {
+  padding: 5px;
+  margin: 15px 10px 10px;
+
+}
+
+header .container .rightnav a {
+  font-size: 13px;
+  color: #fff;
+  text-decoration: none;
+}
+
+header .container .rightnav a:first-child {
+  margin-right: 15px;
+}
+
+
+header .container .rightnav .content .img1 {
+  filter: opacity(.5) drop-shadow(0 0 0 white);
+
+}
+
+header .container .rightnav .content .img2 {
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+header .container .rightnav .content img:hover {
+  background-color: #353638;
+}
+
+/* MAIN  */
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+
+/* FORM El Open CLASS */
+
+#close{
+  display: none;
+}
+#open{
+  display: block;
+}
+
+
+/* ID-FORM */
+main .form {
+  width: 300px;
+  height: 400px;
+  background-color: #2d2e30;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+  display: none;
+}
+
+/* FORM-TOP  */
+
+
+main .form .form-top {
+  border-bottom: 1px solid #d9dadc;
+}
+
+main .form .form-top img {
+  border-radius: 50%;
+  transform: translate(107px, 20px);
+  display: block;
+}
+
+main .form .form-top .text {
+  margin-top: 40px;
+}
+
+main .form .form-top .text p {
+  text-align: center;
+  color: #d9dadc;
+}
+
+main .form .form-top .text p:first-child {
+  margin-bottom: 7px;
+}
+
+main .form .form-top .btn1 button {
+  padding: 5px 15px;
+  border: 1px solid #d9dadc;
+  border-radius: 15px;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #2d2e30;
+  margin: 20px 0;
+  transform: translateX(60%);
+}
+
+main .form .form-top .btn1 button:hover {
+  background-color: #343537;
+}
+
+main .form .form-top .btn1 button a {
+  color: #d9dadc;
+  text-decoration: none;
+}
+
+/* FORM-MEDIUM  */
+main .form .form-medium {
+  border-bottom: 1px solid #d9dadc;
+}
+
+main .form .form-medium:hover {
+  background-color: #343537;
+}
+
+main .form .form-medium .material-icons {
+  color: #fff
+}
+
+main .form .form-medium a {
+  display: block;
+  text-decoration: none;
+  margin-left: 10px;
+  transform: translate(30px, -20px);
+  color: #d9dadc;
+
+}
+
+/* FORM-BOTTOM  */
+main .form .form-bottom {
+  border-bottom: 1px solid #d9dadc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .form .form-bottom button {
+  min-height: 40px;
+  padding: 0 20px 5px 20px;
+  border-radius: 5px;
+  background-color: #2d2e30;
+  margin: 20px;
+  border: 1px solid #d9dadc;
+}
+
+main .form .form-bottom button:hover {
+  background-color: #343537;
+}
+
+main .form .form-bottom button a {
+  color: #d9dadc;
+  text-decoration: none;
+}
+
+/* FORM-INFO  */
+main .form .form-info ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+main .form .form-info ul li.item {
+  margin-right: 10px;
+}
+
+main .form .form-info ul li.item:hover {
+  background-color: #343537;
+}
+
+main .form .form-info ul li.item a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #d9dadc;
+}
+
+/*GOOGLE MAIN */
+main .google-logo {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  height: 148px;
+  width: 100%;
+  position: relative;
+}
+
+main .google-logo img {
+  width: 272px;
+  height: 92px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* MAIN SERCH  */
+
+.search {
+  width: 582px;
+  height: 44px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+@media (max-width: 642px) {
+  .search {
+    width: auto;
+  }
+}
+
+.search input {
+  width: 100%;
+  height: 100%;
+  padding: 6px 86px 6px 48px;
+  border: 1px solid #5d5f63;
+  border-radius: 30px;
+  box-sizing: border-box;
+  outline: none;
+  background-color: #202125;
+  color: #fff;
+}
+
+.search .material-icons {
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.search .action--search {
+  left: 14px;
+}
+
+.search .action--keyboard {
+  right: calc(24px + 14px + 10px);
+}
+
+.search .action--mic {
+  right: 14px;
+}
+
+/* MAIN SUB  */
+main .sub {
+  margin: 0 auto;
+  min-height: 425px;
+}
+
+main .sub .btn-group {
+  margin: 20px;
+}
+
+main .sub .btn-group .btn {
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  background-color: #303135;
+  outline: none;
+  border: 1px solid #303135;
+  border-radius: 5px;
+
+}
+
+main .sub .btn-group .btn:hover {
+  border: 1px solid #585a5d;
+}
+
+main .sub .btn-group .btn .btn__a {
+  color: #e7e8eb;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: left;
+}
+
+main .sub .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .sub .description a {
+  color: #8AB4F8;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+main .sub .description a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER  */
+
+
+@media (min-height: 802px) {
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+footer a {
+  margin-right: 20px;
+  color: #9aa0a6;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-step1 {
+  max-height: 52px;
+  background-color: #171717;
+  border-bottom: 1px solid #212327;
+  color: #9aa0a6;
+  padding: 15px 30px;
+  box-sizing: border-box;
+}
+
+footer .footer-step2 .left-text {
+  margin-left: 20px;
+}
+
+footer .footer-step2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #171717;
+}
+
+footer .footer-step2 .left-text,
+footer .footer-step2 .right-text {
+  display: flex;
+  padding: 15px;
+  box-sizing: border-box;
+}
